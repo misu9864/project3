@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Poppins:ital,wght@0,300;0,400;0,500;1,100;1,200&display=swap'); 
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+p{
+    color: #8e8787;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Philosopher', sans-serif;
+}
+.back{
+    background-color: #f5ebe6;
+}
+//for lets make investment
+.make{
+    letter-spacing: 3px;
+    color: #c37d81;
+}
+//for There Is No Friend As Loyal As A Book
+.fri{
+    color: #2f4858;
+    font-size: 30px;
+}
+//for Subscribe btn
+.dam{
+    margin-left: -25px;
+    background-color: #c27b7f;
+    border: none;
+    color: #fff;
+}
+.circle{
+    border: 5px solid #fcb0b4;
+    border-radius: 50%;
+    opacity: 0.3;
+    position: absolute;
+}
+.x1{
+    top: 300px;
+    width: 90px;
+    height: 90px;
+    animation: let 15s linear infinite alternate;
+    overflow: hidden;
+}
+@keyframes let {
+    0%{left:80% ;top: 300px;}
+    100%{left:-200px; top:300px;}
+}
+.x2{
+    width: 50px;
+    height: 50px;
+    animation: lets 20s linear infinite alternate;
+    top: 400px;
+    left: 200px;
+}
+@keyframes lets {
+    0%{left:20% ;top: 385px;}
+    100%{left:-200px; top:385px;}
+}
+.x3{
+    width: 50px;
+    height: 50px;
+    animation: letss 25s linear infinite alternate;
+    bottom: 300px;
+    left: 200px;
+}
+@keyframes letss {
+    0%{left:50%;bottom: 300px;}
+    100%{left:-200px; bottom: 300px;}
+}
+.x4{
+    width: 50px;
+    height: 50px;
+    animation: le 28s linear infinite alternate;
+    bottom: 60px;
+}
+@keyframes le {
+    0%{left:80% ;bottom:60px;}
+    100%{left:-200px; bottom:60px;}
+}
+//for ny seller
+.ny{
+    background-color: #c27b7f;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    bottom: -150px;
+}
+//for experience motivation...
+.Experi{
+    background-color: #fff;
+    box-shadow:  2px 0 15px 5px rgba(2, 9, 49, 0.06);
+    width: 48%;
+    &:hover{
+        background-color:#c37d81;
+        border-radius: 5px;
+        transform: translateY(-10px);
+        transition: 0.4s;
+        h5,p{
+            color: #fff;
+        }
+        .log{
+            background-color: #8a7cc1;
+            border-radius: 50%;
+        }
+    }
+}
+//for ny animation
+.obj{
+    position: absolute;
+    animation: object 3s linear infinite alternate;
+    bottom: 20px;
+}
+@keyframes object {
+    0%,100%{
+        transform: translateY(-60%);
+    }
+    50%{
+        transform: translateY(-100%);
+    }
+}
+//for image before experience
+.bef{
+    position: relative;
+}
+.bef img{
+    position: relative;
+    z-index: 1;
+    border-radius: 5px;
+}
+.bef::after{
+    background-color: #c27b7f;
+    border-radius: 5px;
+    content: "";
+    height: 100%;
+    left: -20px;
+    position: absolute;
+    top: 20px;
+    width: 100%;
+}
+//for box inside experience
+.log{
+    background-color: #c37d81;
+    width: 60px;
+    height: 60px;
+    box-shadow: 3px 3px #876585;
+}
+//for chapter 01
+.accordion-button{
+    border-radius: 5px 5px 0px 0px;
+    color: #2f4858;
+    
+    &:focus{
+        border: none;
+        box-shadow: none;
+        background-color: #c27b7f;
+    color: #fff;
+    }
+}
+//for square below chapters we have
+.sec{
+    border: 1px solid #c27b7f;
+    width: 200px;
+    display: inline-block;
+    position: relative;
+    opacity: 0.5;
+}
+.sec::before{
+    height: 25px;
+    width: 25px;
+    background-color: #c37d81;
+    position: absolute;
+    content: "";
+    transform: rotate(45deg);
+    top: -11px;
+    opacity: 0.4;
+}
+.sec::after{
+    height: 25px;
+    width: 25px;
+    background-color: #c37d81;
+    position: absolute;
+    content: "";
+    transform: rotate(45deg);
+    top: -11px;
+    left: 110px;
+    opacity: 0.4;
+}
+//for books
+.item:hover{
+    transform: translateY(-5px);
+    transition: 0.4s;
+}
+.dropdown:hover{ 
+    .dropdown-menu{
+        display: block;
+    }
+}
+.nav-item:hover .nav-link{
+    color: #c27b7f;
+}
+.dropdown-menu .dropdown-item:hover{
+    color: #c27b7f;
+}
+.buy{
+    position: relative;
+    z-index: 1;
+    border-radius: 1px;
+    background-color: #fff;
+    border:1px solid #c27b7f;
+    color: #c27b7f;
+    border-style: solid;
+    &:hover .buy::after{
+        background-color: #c27b7f;       
+    }
+}
+.buy::after{
+        background-color: #fff;
+        content: "";
+        height: 59px;
+        width: 93px;
+        left: 12px;
+        top: -1px;
+        position: absolute;
+        z-index: -1;
+    }
+//for ebook $05
+.ebook{
+        position: relative;
+        background-color: #ffffff;
+        &:hover{
+            box-shadow: 5px 5px #876585;
+            transform: translateY(-10px);
+            transition: 0.3s;
+        }
+     .subebook{
+        position: relative;
+        border-radius: 5px;
+    }
+}
+.ebook1{
+    background-color: #ffffff;
+    box-shadow: 5px 5px #876585;
+}
+.buy1{
+        background-color: #c27b7f;
+        color: #fff;
+        border: none;
+        border-radius: 3px;
+}
+//for girl image
+.girl{
+    background-color: #c27b7f;
+    padding: 10px;
+}
+//for fb tw logos
+.log1{
+    background-color: #c37d81;
+    width: 42px;
+    height: 38px;
+    box-shadow: 4px 4px #876585;
+    img{
+        height: 77%;
+        margin: 6px;
+        width: 68%;
+    }
+  
+ &:hover{
+   box-shadow: none;
+   background-color: #876585;
+}
+}
+//for award image
+.awa{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 84px;
+    height: 71px;
+    opacity: 0.4;
+}
+//for nominated sec
+.nominate{
+    box-shadow: 6px 6px #876585;
+    &:hover{
+        transform: translateY(-10px);
+        transition: 0.4s;
+    }
+}
+//for 35 readers..
+.all{
+    box-shadow: 5px 5px #876585;
+    overflow: hidden;
+    &:hover{
+        box-shadow: none;
+        transform: translateY(-10px);
+        transition: 0.4s;
+       }
+      span{
+       color: #896887;
+       font-size: 50px;
+       font-weight: 800;
+     }
+  .page{
+    position: absolute;
+    top: -34px;
+    right: -30px;
+    width: 109px;
+    height: 107px;
+    opacity: 0.3;
+  }
+}
+.chap{
+    border: 5px solid #fff;
+    border-radius: 10px;
+}
+//for background image
+.read{
+    background-image: url('https://wonted-react.vercel.app/assets/images/ctav5.jpg');
+    position: relative;
+    h1{
+        font-size: 50px;
+        font-weight: 800;
+    }
+}
+.read::after{
+    background-color: #2f4858;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+//for content inside backround img
+.content{
+    z-index: 1;  
+}
+
+.text{
+    list-style: none;
+    li{
+        background-color: #fff;
+        width: 29px;
+        height: 34px;
+        border-radius: 50%;
+    }
+}
+.watch{
+    background-image: url('https://wonted-react.vercel.app/assets/images/ctav4.jpg');
+    position: relative;
+    h1{
+        font-size: 60px;
+        font-weight: 800;
+    }
+}
+.watch::after{
+    background-color: #2f4858;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.4;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.details input{
+    background-color: #fff;
+    padding: 13px;
+    border: none;
+    border-radius: 0px;
+    &:focus{
+        border: none;
+        box-shadow: none;
+    }
+}
+.num{
+    color: #c27b7f;
+    font-size: 55px;
+    font-weight: 700;
+}
+.foot{
+    list-style:none;
+    display: inline;
+    li{
+        display: inline-block;
+        &:hover{
+            color: #c27b7f;
+        }
+        a{
+            text-decoration: none;
+            color: #2f4858;
+            margin-left: 9px;
+            margin-right: 10px;
+        }
+        
+    }
+}
+.theme{
+    text-decoration: none;
+    color: #2f4858;
+    &:hover{
+        color: rgb(99, 99, 214);
+    }
+}
+//for swiper heading
+.bright{
+    color: #2f4858;
+}
+.quo{
+    font-size: 60px;
+    color: #c27b7f;
+}
+.owldemo{
+    .owl-item img{
+        width: 70%;
+        float: right;
+    }
+    .owl:hover{
+   transform: translateY(-5px);
+   transition: 0.8s;
+    }
+    span{
+       display: none; 
+    }
+}
